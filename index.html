@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav's Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Password Protection Screen -->
+    <div id="password-screen" class="password-screen" data-theme="dark">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-title">PRANAV_RESUME.exe</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-content">
+                    <div class="ascii-art">
+                        <pre>
+██████╗ ██████╗  █████╗ ███╗   ██╗ █████╗ ██╗   ██╗
+██╔══██╗██╔══██╗██╔══██╗████╗  ██║██╔══██╗██║   ██║
+██████╔╝██████╔╝███████║██╔██╗ ██║███████║██║   ██║
+██╔═══╝ ██╔══██╗██╔══██║██║╚██╗██║██╔══██║██║   ██║
+██║     ██║  ██║██║  ██║██║ ╚████║██║  ██║╚██████╔╝
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝
+                        </pre>
+                    </div>
+                    <div class="login-prompt">
+                        <span class="prompt">resume@pranav:~$</span>
+                        <span class="cursor">█</span>
+                    </div>
+                    <div class="password-input-container">
+                        <input type="password" id="password-input" placeholder="Enter access key..." autocomplete="off">
+                        <div id="error-message" class="error-message"></div>
+                    </div>
+                    <div class="terminal-footer">
+                        <span class="version">v2.0.24 | Terminal Access Required</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-content" class="main-content hidden">
+        <div class="container">
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon">[DARK]</span>
+            </button>
+
+            <!-- Terminal Header -->
+            <div class="terminal-header-main">
+                <div class="terminal-title">PRANAV_RESUME.exe - Resume Access</div>
+            </div>
+
+            <!-- Profile Section -->
+            <section class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="pic.jpg" alt="Pranav" class="avatar-img" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--terminal-border);">
+                        <div class="avatar" style="display: none;">PR</div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">PRANAV</h1>
+                        <p class="title">SYSTEM_DEVELOPER.exe</p>
+                        <p class="location">📍 LOCATION: Bengaluru, India</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:pranav.hoysala777@gmail.com" class="contact-link">📧 pranav.hoysala777@gmail.com</a>
+                    <a href="tel:+918951269074" class="contact-link">📱 +918951269074</a>
+                    <a href="https://github.com/phonot" class="contact-link" target="_blank">🐙 github.com/phonot</a>
+                </div>
+            </section>
+
+            <!-- Main Content -->
+            <main class="main-content-body">
+                <!-- About Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <span class="prompt">resume@pranav:~$</span>
+                        <span class="command">cat about.txt</span>
+                    </div>
+                    <div class="section-content">
+                        <p class="about-text">
+                            > INITIALIZING SYSTEM_PROFILE...<br>
+                            > LOADING DEVELOPER_MODULE...<br>
+                            > STATUS: ACTIVE<br><br>
+                            
+                            Passionate system developer with expertise in building robust, 
+                            scalable applications. Specialized in clean code architecture 
+                            and solving complex technical challenges. Always exploring 
+                            new technologies and pushing the boundaries of what's possible.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <span class="prompt">resume@pranav:~$</span>
+                        <span class="command">ls -la skills/</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4 class="category-title">PROGRAMMING_LANGUAGES</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Linux</span>
+                                    <span class="skill-tag">LaTeX</span>
+                                    <span class="skill-tag">Bash</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4 class="category-title">DEVELOPER_TOOLS</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">VS Code</span>
+                                    <span class="skill-tag">Vim</span>
+                                    <span class="skill-tag">Eclipse</span>
+                                    <span class="skill-tag">Custom LLM Models</span>
+                                    <span class="skill-tag">MS Office</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4 class="category-title">LANGUAGES</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">English: Fluent</span>
+                                    <span class="skill-tag">Kannada: Fluent</span>
+                                    <span class="skill-tag">Hindi: Fluent</span>
+                                    <span class="skill-tag">German: Beginner</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4 class="category-title">SOFT_SKILLS</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Leadership</span>
+                                    <span class="skill-tag">Critical Thinking</span>
+                                    <span class="skill-tag">Curiosity</span>
+                                    <span class="skill-tag">Fast Learner</span>
+                                    <span class="skill-tag">Innovation</span>
+                                    <span class="skill-tag">Open-mindedness</span>
+                                    <span class="skill-tag">Motivation</span>
+                                    <span class="skill-tag">Patience</span>
+                                    <span class="skill-tag">Attention to Detail</span>
+                                    <span class="skill-tag">Coaching</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certificates Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <span class="prompt">resume@pranav:~$</span>
+                        <span class="command">ls certificates/</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="certificates-grid">
+                            <div class="certificate-item" onclick="openCertificate('cert1')">
+                                <div class="certificate-preview">
+                                    <span class="cert-icon">🤖</span>
+                                    <h4>Autonomous Navigation & Robotics</h4>
+                                    <p>TiHAN IIT | Feb 2025</p>
+                                </div>
+                            </div>
+                            <div class="certificate-item" onclick="openCertificate('cert2')">
+                                <div class="certificate-preview">
+                                    <span class="cert-icon">⚡</span>
+                                    <h4>Summer of Projects</h4>
+                                    <p>IEEE SOP | May-Jun 2025</p>
+                                </div>
+                            </div>
+                            <div class="certificate-item" onclick="openCertificate('cert3')">
+                                <div class="certificate-preview">
+                                    <span class="cert-icon">🧬</span>
+                                    <h4>Genetic Engineering</h4>
+                                    <p>Academor | Jun-Jul 2023</p>
+                                </div>
+                            </div>
+                            <div class="certificate-item" onclick="openCertificate('cert4')">
+                                <div class="certificate-preview">
+                                    <span class="cert-icon">👑</span>
+                                    <h4>Leadership Skills</h4>
+                                    <p>Fovea-Z | Mar 2023</p>
+                                </div>
+                            </div>
+                            <div class="certificate-item" onclick="openCertificate('cert5')">
+                                <div class="certificate-preview">
+                                    <span class="cert-icon">🏥</span>
+                                    <h4>Medical Equipment Troubleshooting</h4>
+                                    <p>ATHEENAPANDIAN | Nov 2024</p>
+                                </div>
+                            </div>
+                            <div class="certificate-item" onclick="openCertificate('cert6')">
+                                <div class="certificate-preview">
+                                    <span class="cert-icon">🔧</span>
+                                    <h4>Biomedical System Design</h4>
+                                    <p>CPDMeD | Feb 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <span class="prompt">resume@pranav:~$</span>
+                        <span class="command">ls projects/</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="project-item">
+                            <h3 class="project-title">PARALYSIS_HEALTH_CARE_SYSTEM.exe</h3>
+                            <p class="project-description">
+                                <strong>Year:</strong> 2024<br><br>
+                                The Paralysis Health Care System using Smart Glove is a wearable device designed to assist paralyzed patients in communicating effectively. The glove detects specific finger movements and translates them into predefined messages, which are instantly sent to the doctor or caregiver.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">[LIVE_DEMO]</a>
+                                <a href="#" class="project-link">[GITHUB]</a>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <h3 class="project-title">SLRM_SIMULATED_LASER_RECOIL_MODULE.exe</h3>
+                            <p class="project-description">
+                                <strong>Year:</strong> 2025<br><br>
+                                The Simulated Laser Recoil Module (SLRM) is an innovative system designed to replicate the recoil effect of firearms in laser-based training and simulation. It provides trainees with a realistic shooting experience by incorporating force feedback while maintaining safety through laser technology. This enhances accuracy, reflex development, and tactical training without the risks of live ammunition.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">[LIVE_DEMO]</a>
+                                <a href="#" class="project-link">[GITHUB]</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Achievements Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <span class="prompt">resume@pranav:~$</span>
+                        <span class="command">cat achievements.log</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="achievements-list">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🎖️</span>
+                                <div class="achievement-content">
+                                    <h4 class="achievement-title">NCC 'B' CERTIFICATE</h4>
+                                    <p class="achievement-desc">Completed 'B' Certificate with 'A' grade in National Cadet Corps</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🏕️</span>
+                                <div class="achievement-content">
+                                    <h4 class="achievement-title">COMBINED ANNUAL TRAINING CAMP</h4>
+                                    <p class="achievement-desc">Attended Combined Annual Training Camp [2024]</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🇮🇳</span>
+                                <div class="achievement-content">
+                                    <h4 class="achievement-title">NATIONAL LEVEL CAMPS</h4>
+                                    <p class="achievement-desc">Completed Three National level Camps (Pre-Thal Shanik Camp) [2025]</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">⚔️</span>
+                                <div class="achievement-content">
+                                    <h4 class="achievement-title">ARMY ATTACHMENT CAMP</h4>
+                                    <p class="achievement-desc">Attended National Level Army Attachment Camp [2025]</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">💡</span>
+                                <div class="achievement-content">
+                                    <h4 class="achievement-title">IDEAS & INNOVATION COMPETITION</h4>
+                                    <p class="achievement-desc">Project Paper Presented in Ideas and Innovation Competition [2025]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="section">
+                    <div class="section-header">
+                        <span class="prompt">resume@pranav:~$</span>
+                        <span class="command">cat education.txt</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="education-item">
+                            <h3 class="degree">10TH [CBSE]</h3>
+                            <span class="university">Agragami Vidya Kendra</span>
+                            <span class="graduation-year">2020</span>
+                        </div>
+                        <div class="education-item">
+                            <h3 class="degree">12TH [PCMB]</h3>
+                            <span class="university">Narayana Pre University College</span>
+                            <span class="graduation-year">2022</span>
+                        </div>
+                        <div class="education-item">
+                            <h3 class="degree">BE BIOMEDICAL ENGINEERING</h3>
+                            <span class="university">ACS College of Engineering</span>
+                            <span class="graduation-year">2022-2026</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Terminal Footer -->
+            <footer class="terminal-footer">
+                <div class="footer-content">
+                    <span class="prompt">resume@pranav:~$</span>
+                    <span class="status">SYSTEM_STATUS: ONLINE | LAST_UPDATED: 2024</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="certificate-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">CERTIFICATE_VIEWER.exe</span>
+                <button class="close-modal" onclick="closeCertificate()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="certificate-image" src="" alt="Certificate">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
