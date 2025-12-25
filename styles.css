@@ -843,4 +843,22 @@ body {
     .terminal-window {
         width: 95%;
     }
+
+}
+
+
+.project-link {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+.project-link:hover {
+    background: var(--accent-color);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 255, 0, 0.3);
+}
+
+[data-theme="light"] .project-link:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
