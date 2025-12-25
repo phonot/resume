@@ -848,17 +848,20 @@ body {
 
 
 .project-link {
-    pointer-events: auto !important;
-    cursor: pointer !important;
+    position: relative;      
+    z-index: 10;            
+    display: inline-block;   
+    pointer-events: auto; 
+    cursor: pointer;
 }
 
-.project-link:hover {
-    background: var(--accent-color);
-    color: var(--bg-primary);
-    transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(0, 255, 0, 0.3);
+
+.project-item,
+.section {
+    overflow: visible !important;  
 }
 
-[data-theme="light"] .project-link:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+.section {
+    overflow: visible;  
 }
